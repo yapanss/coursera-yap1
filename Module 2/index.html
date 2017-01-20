@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="achat">
+<head>
+	<meta charset="utf-8">
+	<title>checking list</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<script src="js/angular.min.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<body>
+<div id = "buy" class="col-6 "  ng-controller="buyController as buy">
+	<h2 class="text-center">To Buy </h2><br>
+	<h3 class="text-center" ng-if="buy.buyList==''">Everything is bought !</h3>
+	<div class="centrer">
+	<ol>
+		<li  ng-repeat="item in buy.buyList">
+			<p>	Buy {{item.quantity}} {{item.name}}
+			<button class="rouge" ng-click="buy.removeItem($index)">Bought !</button>
+			</p>
+		</li>
+	</ol>
+	</div>
+</div>
+<div id="bought" ng-controller="boughtController as bought">
+	<h2 class="text-center"> Already Bought </h2><br>
+	<h3 class="text-center" ng-if="bought.boughtList==''">Nothing bought yet !</h3>
+	
+	<div class="centrer">
+	<ol>
+		<li ng-repeat="item in bought.boughtList">
+			<p>Bought {{item.quantity}} {{item.name}} </p>
+		</li>
+	</ol>	
+	</div>
+	
+
+	
+</div>
+
+</body>
+</html>
