@@ -14,7 +14,7 @@
 	<h3 class="text-center" ng-if="buy.buyList==''">Everything is bought !</h3>
 	<div class="centrer">
 	<ol>
-		<li  ng-repeat="item in buy.buyList">
+		<li ng-repeat="item in buy.buyList">
 			<p>	Buy {{item.quantity}} {{item.name}}
 			<button class="rouge" ng-click="buy.removeItem($index)">Bought !</button>
 			</p>

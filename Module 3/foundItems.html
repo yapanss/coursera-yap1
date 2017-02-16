@@ -1,0 +1,32 @@
+<div >
+	<div id="name" class="col-lg-4">
+
+		<div class="titre text-center">{{list.title1}}</div>
+		<ul>
+			<li ng-repeat="item in list.found">
+				<p>{{item.name}}</p>
+				
+			</li>
+		</ul>
+	</div>
+	<div id="shortName" class="col-lg-2">
+		<div class="titre text-center" >{{list.title2}}</div>
+		<ul>
+			<li ng-repeat="item in list.found">
+				<p class="text-center">{{item.short_name}}</p>
+			</li>
+		</ul>
+	</div>
+	<div id="description" class="col-lg-6">
+		<div class="titre text-center">{{list.title3}}</div>
+		<ul>
+			<li ng-repeat="item in list.found">
+				<p>
+				<button id="aDroite" ng-click="list.onRemove({index: $index})">Don't want this one !</button>
+				{{item.description}}
+				</p>
+			</li>
+		</ul>
+	</div>
+</div>
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="NarrowItDownApp">
+<head>
+	<meta charset="utf-8">
+	<title>narrow</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/narrow.css">
+	<script src="js/angular.min.js"></script>
+	<script src="js/narrow.js"></script>
+</head>
+<body>
+	<div id="cadre" ng-controller="NarrowItDownController as Narrow">
+			<input type="text" ng-model="Narrow.searchTerm" placeholder="Enter a search term">
+			<button ng-click="Narrow.find()">Narrow It Down For Me !</button>
+		
+			<div id="saisie">
+				<h2 class="text-center" ng-if="Narrow.notFound">{{Narrow.message}}</h2>
+			
+			</div>
+			
+			   <found-items 
+			   found="Narrow.found" 
+			   title1="Narrow.title1"
+			   title2="Narrow.title2"
+			   title3="Narrow.title3"
+			   notFound="Narrow.notFound"
+			   on-remove="Narrow.onRemove(index)"
+			   ng-if="!Narrow.notFound">
+			   	
+			   </found-items>
+				
+	</div>
+
+</body>
+</html>

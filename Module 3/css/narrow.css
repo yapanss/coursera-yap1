@@ -1,0 +1,52 @@
+#cadre{
+	margin: 40px;
+}
+
+#saisie{
+	background-color: red;
+}
+#name{
+	/*width: 200px;*/
+	/*border: solid black 1px;*/
+	
+	/*height: 400px;*/
+	/*background-color: cyan;*/
+	float: left;
+	/*margin: 20px;*/
+}
+#shortName{
+	/*width: 50px;*/
+	/*border: solid black 1px;*/
+	
+	/*height: 400px;*/
+	/*background-color: pink;*/
+	float: left;
+	/*margin: 20px;*/
+}
+#description{
+	/*width: 400px;*/
+	/*border:solid black 1px;*/
+	
+	/*background-color: lightgreen;*/
+	float: left;
+	/*margin: 20px;*/
+}
+.titre{
+	color: blue;
+}
+p{
+	color: white;
+	height: 60px;
+	background-color: #c82d49;
+	
+}
+
+ul{
+	list-style-type: none;
+}
+
+#aDroite{
+	color: green;
+	float: right;
+	clear: both;
+}

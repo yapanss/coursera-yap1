@@ -45,17 +45,4 @@ function checkingService(){
     };
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 })();
