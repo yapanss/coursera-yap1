@@ -1,0 +1,27 @@
+.container{
+	margin: 20px;
+	height: 30px;
+	background-color: lightgray;
+}
+.menus:{
+	border: solid blue 1px;
+	margin: 20px;
+	color: red;
+}
+
+a:hover{
+	background-color:hotpink;
+	height: 50px;
+}
+a:link{
+	text-decoration: none;
+}
+a[ui-sref]{
+	margin-top: 50px;
+	margin-right: 20px;
+	font-size: 1.5em;
+}
+li.detail:{
+	color: lightblue;
+	font-size: 1.5em;
+}
