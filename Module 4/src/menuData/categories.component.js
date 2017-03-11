@@ -2,7 +2,7 @@
 
 angular.module('MenuData')
 .component('categoriesComponent',{
-	templateUrl:'src/MenuData/templates/categoriesComponent.html',
+	templateUrl:'src/MenuData/categoriesComponent.html',
 	bindings:{
 		items:'<'
 	}
