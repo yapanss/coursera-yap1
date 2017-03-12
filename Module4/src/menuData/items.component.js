@@ -2,12 +2,10 @@
 
 angular.module('MenuData')
 .component('itemsComponent',{
-	template:'<ul><li class="detail" ng-repeat="item in $ctrl.item">{{item.name}}</li></ul>',
+	templateUrl:'src/menudata/templates/items.component.html',
 	bindings:{
 		item:'<'
 	}
 })
-
-
 
 })()
