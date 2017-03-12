@@ -37,10 +37,7 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
     resolve: {
       item: ['$stateParams', 'MenuDataService',
             function ($stateParams, MenuDataService) {
-              return MenuDataService.getItemsForCategory($stateParams.itemId)
-               .then(function(response){
-                return response.data.menu_items;
-               }); 
+              return MenuDataService.getItemsForCategory($stateParams.itemId);
             }]
     }
   });
