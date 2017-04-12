@@ -1,0 +1,19 @@
+<h3 id="regTitle">Registration form</h3>
+
+<form name="registration" class="formReg" novalidate>
+	
+	<h4><input class="inputReg" type="text" name="first_name" placeholder="First name" ng-model="signupCtrl.firstName" required><span ng-if = "(registration.first_name.$error.required) && (registration.first_name.$touched)">The First Name is required !</span> </h4>
+
+	<h4><input class="inputReg" type="text" name="last_name" placeholder="Last name" ng-model = "signupCtrl.lastName" required><span ng-if = "(registration.last_name.$error.required) && (registration.last_name.$touched)">The Last Name is required !</span></h4>
+	
+	<h4><input class="inputReg" type="email" name="email" placeholder="Email address" ng-model = "signupCtrl.email" required><span ng-if = "(registration.email.$error.required) && (registration.email.$touched)">The Email is required !</span></h4>
+	
+	<h4><input class="inputReg" type="tel" name="phone" placeholder="Phone ###-###-###" ng-model = "signupCtrl.phone" pattern="(\d{3})-(\d{3})-(\d{3})"><span ng-if = "(registration.phone.$invalid) && (registration.phone.$touched)">Phone must be in the format ###-###-###</span></h4>
+	
+	<input class="inputReg" type="text" name="favorite" ng-model = "signupCtrl.favorite" placeholder="Your favorite menu number ">
+	
+	<div id="errorMessage" ng-if='signupCtrl.errorMessage !=="" ' >{{signupCtrl.errorMessage}}</div><br>
+	
+	<button class="btn btn-primary" ng-disabled="registration.$invalid" ng-click ="signupCtrl.check(registration)">Submit the form</button>
+</form>
+<div ng-if='signupCtrl.affiche == true' id="savedInfo">Your information has been saved</div>

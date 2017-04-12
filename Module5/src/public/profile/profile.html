@@ -1,0 +1,9 @@
+<h2 class="text-center" ng-if = 'signupCtrl2.items.first_name != "" '>Your personnal informations</h2>
+<h4 ng-if = 'signupCtrl2.items.first_name == "" ' class="text-center">Not Signed Up Yet. <a ui-sref = "public.signup">Sign up Now!</a></h4>
+
+<div ng-if = 'signupCtrl2.items.first_name != "" ' >
+<!-- <button ng-click = "signupCtrl2.affiche()">Affiche</button> -->
+<signup-component items = signupCtrl2.items>
+
+</signup-component>
+</div>

@@ -1,0 +1,14 @@
+<div class="formReg">
+<div id ="persInfos">
+	<h4> <span class="gauche text-left">First name :</span> <span class="droite"></span>{{$ctrl.items.first_name}}</h4>
+	<h4> <span class="gauche text-left" >Last name :</span>  {{$ctrl.items.last_name}}</h4>
+	<h4> <span class="gauche text-left">Email :</span>  {{$ctrl.items.email}}</h4>
+	<h4> <span class="gauche text-left">Phone number :</span>  {{$ctrl.items.phone}}</h4>
+</div>
+<div id="favInfos">
+	<h4> Your favorite menu item is : <span class="gauche">{{$ctrl.items.favorite}}</span> </h4>
+	<img src="images/menu1/{{$ctrl.items.favoriteShort}}/{{$ctrl.items.favorite}}.jpg">
+	<h5><span id="favName"> {{$ctrl.items.rep.name}}</span></h5>
+	<h5><span id="describe"> description:</span> {{$ctrl.items.rep.description}}</h5>
+</div>
+</div>
